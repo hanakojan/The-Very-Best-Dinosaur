@@ -4,14 +4,19 @@
 }
 
 @font-face {
-  font-family: 'CalibriLight';
-  src: url('../public/fonts/CalibriLight.ttf') format('truetype');
+  font-family: 'Aleo-Regular';
+  src: url('../public/fonts/Aleo-Regular.otf') format('truetype');
+}
+
+body {
+  background-image: url('../public/wallpaper.jpeg'); /* Path to your image */
+  background-size: cover; /* This ensures that the image covers the entire background */
+  background-position: center; /* This centers the image */
 }
 
 .app {
   text-align: center;
-  background-color: #f4f4f4;
-  font-family: 'CalibriLight', sans-serif;
+  font-family: 'Aleo-Regular', sans-serif;
   padding: 5px;
 }
 
@@ -26,7 +31,7 @@
   flex-grow: 1;
   padding: 15px 0;
   margin: 0 10px; /* Slight space between buttons */
-  background-color: #4CAF50;
+  background-color: #6b826c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -36,12 +41,12 @@
 }
 
 .button-container button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #5e8960; /* Darker green on hover */
 }
 
 .button-container button.selected {
-  background-color: #2E8B57; /* A different shade for the selected button */
-  color: #FFF;
+  background-color: #565223; /* A different shade for the selected button */
+  color: #ffffff45;
   font-weight: bold;
 }
 
@@ -54,33 +59,39 @@
 }
 
 
-.team-name, .introduction, .navigation, .era-display, .thank-you {
+.title, .introduction, .navigation, .era-display, .thank-you {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
 }
 
-.team-name {
-  background-color: #a2d149;
-  color: #fff;
+.title {
+  color: #ffffff;
   font-family: 'DinoPlay', sans-serif;
   font-size: 75px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .introduction {
-  background-color: #7fbcac;
-  color: #333;
+  background-color: hsl(142, 18%, 33%);
+  color: #fffafa;
+  text-align: center;
+  margin-bottom: 20px; /* Add space at the bottom */
+  line-height: 1.5; /* Increase line spacing for readability */
+  
+  border: 2px solid #ffffff; /* Orange border with 2px width */
 }
 
 .navigation button {
+  font-family: 'Aleo-Regular', sans-serif;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #f7cf48;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
 }
+
 .dinosaur-card{
   margin: 10px;
   padding: 10px 20px;

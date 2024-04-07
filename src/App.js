@@ -15,7 +15,7 @@ function App() {
     if (period.includes("Triassic")) return "Triassic";
     if (period.includes("Jurassic")) return "Jurassic";
     if (period.includes("Cretaceous")) return "Cretaceous";
-    return "Unknown"; // Fallback, in case the period doesn't match expected values
+    return null
   };
 
   // Ensuring each dinosaur has a major era category
@@ -26,9 +26,9 @@ function App() {
 
   // Filter dinosaurs based on the selected major era
   const dinosaursByEra = {
-    Triassic: ['chindesaurus', 'coelophysis', 'coloradisaurus', 'eoraptor', 'guaibasaurus', 'herrerasaurus', 'liliensternus'],
-    Jurassic: ['aardonyx', 'agilisaurus', 'allosaurus', 'ammosaurus', 'amygdalodon', 'anchisaurus'],
-    Cretaceous: ['abelisaurus', 'achelousaurus', 'achillobator', 'acrocanthosaurus', 'aegyptosaurus', 'afrovenator', 'alamosaurus']
+    Triassic: ['chindesaurus'],
+    Jurassic: ['aardonyx'],
+    Cretaceous: ['abelisaurus']
   };  
 
   const filteredDinosaurs = dinosaurData.filter(dino => 
@@ -39,9 +39,11 @@ function App() {
 
   return (
     <div className="app">
-      <div className="team-name">The Very Best Dinosaur Ever</div>
+      <div className="title">The Very Best Dinosaur Ever</div>
       <div className="introduction">
-        A web app categorizing dinosaurs in prehistoric eras with detiled information.
+        Welcome to our page! Here, you'll discover the dinosaurs that had the longest reigns in their respective continents during the Triassic, Jurassic, and Cretaceous periods. By looking at attributes such as diet, number of legs, and other features, this project offers a more holistic understanding to the discussion of Paleontology and Evolutionary Biology by incorporating Data Science and building upon the sparse dinosaur datasets currently available.
+
+        Towards the end of the page, you'll find, a prototype dinosaur created by combining the standout features from the most successful dinosaurs across different eras and continents.
       </div>
       <EraNavigation 
         currentEra={currentEra} 
