@@ -1,0 +1,8 @@
+.scroller {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Enable horizontal scrolling */
+    max-height: calc(300px * 2);
+    width: 100%;
+  }
+  

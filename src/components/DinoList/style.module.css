@@ -1,0 +1,43 @@
+.dinoList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Adjust space between cards */
+    padding: 10px; /* Padding around the entire grid */
+    padding-left: 50px; /* Padding Left */
+  }
+  @media (max-width: 2540px) {
+    .dinoList {
+      grid-template-columns: repeat(8, 1fr); /* Adjust to 4 columns for smaller screens */
+    }
+  }
+
+  @media (max-width: 1824px) {
+    .dinoList {
+      grid-template-columns: repeat(6, 1fr); /* Adjust to 4 columns for smaller screens */
+    }
+  }
+
+  @media (max-width: 1524px) {
+    .dinoList {
+      grid-template-columns: repeat(5, 1fr); /* Adjust to 4 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .dinoList {
+      grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dinoList {
+      grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dinoList {
+      grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+  }
+  

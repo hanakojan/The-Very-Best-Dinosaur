@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'DinoPlay';
+  src: url('../public/fonts/DinoPlay.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CalibriLight';
+  src: url('../public/fonts/CalibriLight.ttf') format('truetype');
+}
+
+.app {
+  text-align: center;
+  background-color: #f4f4f4;
+  font-family: 'CalibriLight', sans-serif;
+  padding: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Style for each button */
+.button-container button {
+  flex-grow: 1;
+  padding: 15px 0;
+  margin: 0 10px; /* Slight space between buttons */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.button-container button.selected {
+  background-color: #2E8B57; /* A different shade for the selected button */
+  color: #FFF;
+  font-weight: bold;
+}
+
+.button-container button:first-child {
+  margin-left: 0;
+}
+
+.button-container button:last-child {
+  margin-right: 0;
+}
+
+
+.team-name, .introduction, .navigation, .era-display, .thank-you {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-name {
+  background-color: #a2d149;
+  color: #fff;
+  font-family: 'DinoPlay', sans-serif;
+  font-size: 75px;
+}
+
+.introduction {
+  background-color: #7fbcac;
+  color: #333;
+}
+
+.navigation button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f7cf48;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.dinosaur-card{
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #8b61ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.dinosaur-details{
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #7fbcac;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.era-display {
+  background-color: #ff6f61;
+  color: #fff;
+  font-family: 'DinoPlay';
+  font-size: xx-large;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.thank-you {
+  background-color: #87a8d0;
+  color: #fff;
+}

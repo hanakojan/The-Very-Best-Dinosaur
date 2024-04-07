@@ -1,0 +1,35 @@
+.dinosaurDetails {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+  }
+  
+  .dinosaurDetails h1 {
+    color: #333;
+  }
+  
+  .dinosaurDetails h2 {
+    color: #665;
+  }
+  .dinosaurDetails button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+  .dinosaurDetails button:hover {
+    background-color: #367C39;
+  }
+  
+  .dinosaurDetails button.selected {
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  
+  
